@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@rollup/plugin-dsv": "^3.0.1"
+  },
+  "dependencies": {
+    "@bitthecat/tailwind-vue-data-table": "^0.2.2",
+    "bootstrap": "^5.2.3",
+    "bootstrap-vue": "^2.23.1",
+    "vite": "^3.2.4",
+    "vue": "^3.2.45"
+  }
+}

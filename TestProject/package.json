@@ -1,0 +1,21 @@
+{
+  "name": "testproject",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "serve":"vue-cli-service serve",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "sequelize": "^6.26.0",
+    "sqlite3": "^5.1.2",
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.2.0",
+    "vite": "^3.2.4"
+  }
+}
