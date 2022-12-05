@@ -11,16 +11,31 @@
   text-align: center
 }
 h1{
-  color: white;
+  color: black;
+  text-justify: auto;
+  text-shadow: 2px 4px 8px black;
 }
 
-*{
-  background-color: slategray;
-}
+
 
 button {
   color:whitesmoke;
   background-color: darkcyan;
   font-weight: bold;
 
+}
+
+tr {
+  cursor: pointer;
+}
+
+#mainTable{
+  color:whitesmoke;
+  text-align: center;
+  border-radius: 15px 50px 30px 5px;
+  background: cadetblue;
+  padding: 2em;
+  width: auto;
+  height: auto;
+  box-shadow: 10px 10px 25px 8px grey;
 }

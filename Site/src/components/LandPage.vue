@@ -1,10 +1,14 @@
 <script setup>
 import { ref } from 'vue'
-
+defineProps({
+  user: String
+})
 </script>
 
 <template>
-  <h1>Welcome!</h1>
+<div class="container">
+  <h1>Broadway Partners</h1>
+</div>
 </template>
 
 
