@@ -1,42 +1,34 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import HelloWorld from './components/HelloWorld.vue'
+import LoginPage from './components/LoginPage.vue'
+import LandPage from './components/LandPage.vue'
 
 </script>
 
-<template>
-
-  <HelloWorld msg="Broadway Partners" />
-  <div v-if="showMe == 'show'"> Hello! </div>
-  <div v-else-if="!showMe"> Please Enter Your Password </div>
-  <div v-else >Not Recognised</div>
-  <input v-model="showMe">
-
+<template >
+<div class="container p-5">
+  <LoginPage v-if="!loggedIn"/>
+  <LandPage v-else-if="loggedIn"/>
+</div>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+
 
 <script>
 export default{
-  data () {
-    return {
-      showMe: ''
-    }  
-  }
-};
-
+    data() {
+        return {
+            showMe: "",
+            loggedIn: false
+        };
+    },
+    components() {
+        LoginPage,
+        LandPage,
+        FontAwesomeIcon;
+    }
+}
 </script>
+
 
